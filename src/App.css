@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+}
+
+.wb-title {
+  color: rgb(200, 49, 112);
+  font-weight: bold;
+}
+
+.food-title-color {
+  color: rgb(200, 49, 112);
+}
+
+ul .nav-link {
+  font-family: 'Roboto'
+}
+
+.drop-me{
+  margin-right: 80px;
+}
+
+.hover-user:hover {
+  font-weight: bold;
+}
+
+.hover-drop-user:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.carousel {
+  max-height: 30vh;
+}
+
+.image-height {
+  max-height: 500px; 
+}
+
+@media screen and (min-width: 480px) {
+  .dopdown-media {
+    display: inline;
+    margin-left: 0px;
+    padding-left: 0;
+  }
+}
