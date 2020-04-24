@@ -30,7 +30,7 @@ class NavBar extends Component {
     handleClick(i) {
         const links = this.state.links.slice(); 
         for (const j in links) {
-          links[j].isActive = i == j ;
+          links[j].isActive = i === j ;
         }
         this.setState({links: links});
     }
@@ -76,7 +76,7 @@ class NavBar extends Component {
 NavLink.propTypes = {
     path: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired,
+    to: PropTypes.object.isRequired,
     onClick: PropTypes.func.isRequired,
     isActive: PropTypes.bool.isRequired
 }
