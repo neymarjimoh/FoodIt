@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import Style from './NavBar.module.css';
 
 
-function NavLink() {
+function NavLink({path, text, isActive, onClick}) {
     return(
-        <li className="nav-item" >
-            <Link className="nav-link" to={this.props.path}>{this.props.text}</Link>
+        <li className={"nav-item " + (isActive ? "active": "")}>
+            <Link className="nav-link" to={path} onClick={() => onClick()}>{text}</Link>
         </li>
     )
 }
@@ -17,9 +17,22 @@ class NavBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+            links: [
+                {path: "/", text: "Home", isActive: false},
+                {path: "/about", text: "About", isActive: false},
+                {path: "/menu", text: "Menu", isActive: false},
+                {path: "/contact", text: "Contact", isActive: false},
+                {path: "/cart", text: <i className="fas fa-shopping-cart"></i>, isActive: false},
+            ]
         }
+    }
 
+    handleClick(i) {
+        const links = this.state.links.slice(); 
+        for (const j in links) {
+          links[j].isActive = i == j ;
+        }
+        this.setState({links: links});
     }
 
     render() {
@@ -32,21 +45,15 @@ class NavBar extends Component {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/about" className="nav-link">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/menu" className="nav-link">Menu</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Contact</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/cart" className="nav-link"><i className="fas fa-shopping-cart"></i></Link>
-                        </li>
+                        {this.state.links.map((link, i) => 
+                            <NavLink 
+                            path={link.path} 
+                            text={link.text} 
+                            isActive={link.isActive}
+                            key={link.path} 
+                            onClick={() => this.handleClick(i)}
+                            /> 
+                        )}
                     </ul>
                     {/* <li className="nav-item">
                             <Link to="/cart" className="nav-link"><i className="fas fa-shopping-cart"></i></Link>
@@ -62,10 +69,6 @@ class NavBar extends Component {
                             <Link to="/" className="dropdown-item hover-user">Log Out <i className="fas fa-user-slash food-title-color"></i></Link>
                         </div>
                     </li>
-                    {/* <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form> */}
                 </div>
             </nav>
 
