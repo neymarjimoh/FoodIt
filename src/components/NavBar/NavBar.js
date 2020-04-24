@@ -55,9 +55,6 @@ class NavBar extends Component {
                             /> 
                         )}
                     </ul>
-                    {/* <li className="nav-item">
-                            <Link to="/cart" className="nav-link"><i className="fas fa-shopping-cart"></i></Link>
-                    </li> */}
                     <li className="nav-item dropdown dopdown-media">
                         <Link className="nav-link dropdown-toggle drop-me" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span className={Style.user}>User </span><i className="fa fa-user-circle food-title-color" aria-hidden="true"></i>
