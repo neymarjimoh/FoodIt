@@ -28,12 +28,26 @@ ul .nav-link {
 }
 
 
-.carousel {
+/* .carousel {
   max-height: 30vh;
+} */
+
+.get-started-button:hover {
+  background-color: rgb(200, 49, 112);
+  border: none;
 }
 
 .image-height {
   max-height: 500px; 
+}
+
+.features {
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.features-items {
+  text-align: center;
+  padding: 10px;
 }
 
 @media screen and (min-width: 480px) {

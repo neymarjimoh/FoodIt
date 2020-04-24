@@ -1,48 +1,34 @@
 import React, { Component } from "react"; 
+import Carousel from './Carousel';
+
+
+function Features() {
+    return(
+        <div className="container-fluid features">
+            <div className="row">
+                <div className="col-xs-12 col-md-4 features-items">
+                    <h5><i className="far fa-clock"></i><br /> 24/7 Delivery</h5>
+                </div>
+                <div className="col-xs-12 col-md-4 features-items">
+                    <h5><i class="fas fa-bus-alt"></i><br />  Fast Delivery</h5>
+                </div>
+                <div className="col-xs-12 col-md-4 features-items">
+                    <h5><i class="fab fa-cc-mastercard"></i><br />  Online Payment</h5>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 class Home extends Component {
   render() {
     return (
-     <div className="carousel">
-        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="https://images.pexels.com/photos/175753/pexels-photo-175753.jpeg?cs=srgb&dl=person-cooking-on-stainless-steel-cooking-pot-175753.jpg&fm=jpg" className="d-block w-100 image-height" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://images.pexels.com/photos/326281/pexels-photo-326281.jpeg?cs=srgb&dl=close-up-of-salad-on-table-326281.jpg&fm=jpg" className="d-block w-100 image-height" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?cs=srgb&dl=blur-breakfast-chef-cooking-262978.jpg&fm=jpg" className="d-block w-100 image-height" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                </div>
+        <React.Fragment>
+            <div className="carousel">
+                <Carousel />
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-        </div>
-     </div>
+            <Features />
+        </React.Fragment>
     );
   }
 }

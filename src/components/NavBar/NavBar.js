@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Style from './NavBar.module.css';
 
 
@@ -73,8 +73,11 @@ class NavBar extends Component {
     }
 }
 
-NavBar.propTypes = {
-
+NavLink.propTypes = {
+    path: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+    isActive: PropTypes.bool.isRequired
 }
 
 export default NavBar;
