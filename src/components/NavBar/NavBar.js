@@ -76,6 +76,7 @@ class NavBar extends Component {
 NavLink.propTypes = {
     path: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
     isActive: PropTypes.bool.isRequired
 }
