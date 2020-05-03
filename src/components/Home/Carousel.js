@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Button() {
     return(
-        <Link to="/menu" >
+        <Link to="/login" >
             <button type="button" className="btn btn-outline-primary get-started-button">Get Started</button>
         </Link>
     )
