@@ -50,6 +50,16 @@ ul .nav-link {
   padding: 10px;
 }
 
+.features-items-text {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.features-items-text:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
 .display-menu {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   font-style: oblique;
@@ -85,6 +95,122 @@ ul .nav-link {
   font-family: 'Courier New', Courier, monospace;
   font-style: normal;
   font-size: larger;
+  text-shadow: 2px 2px 4px #6e6a6a;
+}
+
+.how-to-order {
+  padding: 10px;
+  text-align: center;
+}
+
+.order-header {
+  color: orange;
+  font-weight: bolder;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.order-number {
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 200px;
+}
+
+.order-number:hover {
+  background-color:white;
+  color: orange;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.order-text, .payment-text {
+  font-family: cursive;
+}
+
+.order-icon {
+  color: orange;
+  font-size: larger;
+}
+
+/* .payment-options-align {
+  margin: auto;
+} */
+
+.orange {
+  color: orange;
+  font-weight: bolder;
+}
+
+.newsletter-div {
+  background-color: #00ace6;
+}
+
+.newsletter-div-col-1 {
+  color: white;
+  padding: 20px;
+}
+
+.newsletter-div-col-1-heading {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-size: larger;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #4b4949;
+  margin: 5px;
+  padding: 5px;
+}
+
+.newsletter-div-col-1-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+  padding: 5px;
+  text-shadow: 2px 2px 4px #4b4949;
+}
+
+.subscribe-form {
+  margin: 5px;
+  padding: 5px;
+}
+
+.subscribe-form-input {
+  background-image: url("https://img.icons8.com/color/24/000000/filled-message.png");
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-position: 10px 8px;
+  border: 1px solid white;
+  height: 44px;
+}
+
+.subscribe-form-button {
+  background-color:  rgb(66, 28, 160);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.subscribe-form-button:hover {
+  opacity: 0.8;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgb(66, 28, 160);
+}
+
+.newsletter-div-col-2 {
+  color: white;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px #4b4949;
+}
+
+.newsletter-div-col-2-address {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 480px) {

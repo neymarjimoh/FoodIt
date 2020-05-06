@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
 import Carousel from './Carousel';
+import HowToOrder from './HowToOrder';
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 
 function Features() {
@@ -9,13 +11,16 @@ function Features() {
         <div className="container-fluid features">
             <div className="row">
                 <div className="col-xs-12 col-md-4 features-items">
-                    <h5><i className="far fa-clock"></i><br /> 24/7 Delivery</h5>
+                    <h5><img src="https://img.icons8.com/color/48/000000/hourglass.png" alt="clock-item" /><br /> 
+                    <span className="features-items-text">24/7 Delivery</span></h5>
                 </div>
                 <div className="col-xs-12 col-md-4 features-items">
-                    <h5><i className="fas fa-bus-alt"></i><br />  Fast Delivery</h5>
+                    <h5><img src="https://img.icons8.com/color/48/000000/deliver-food.png" alt="bus-time-icon" /><br />  
+                    <span className="features-items-text">Fast Delivery</span></h5>
                 </div>
                 <div className="col-xs-12 col-md-4 features-items">
-                    <h5><i className="fab fa-cc-mastercard"></i><br />  Online Payment</h5>
+                    <h5><img src="https://img.icons8.com/color/48/000000/online-payment-with-a-credit-card.png" alt="online-icon" /><br />  
+                    <span className="features-items-text">Online Payment</span></h5>
                 </div>
             </div>
         </div>
@@ -84,7 +89,7 @@ function DisplaySmallMenu() {
             </div><br />
             <div className="row">
                 <div className="col-offset-6 mx-auto">
-                    <p><span className="wb-title diff">Keep browsing our latest menu</span> <Button /></p>
+                    <p><span className="wb-title diff">Keep browsing our latest menu</span> &nbsp; <Button /></p>
                 </div>
             </div>
         </div>
@@ -99,6 +104,8 @@ class Home extends Component {
             </div>
             <Features />
             <DisplaySmallMenu />
+            <HowToOrder />
+            <NewsLetter />
         </React.Fragment>
     );
   }

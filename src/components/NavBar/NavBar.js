@@ -60,10 +60,10 @@ class NavBar extends Component {
                             <span className={Style.user}>User </span><i className="fa fa-user-circle food-title-color" aria-hidden="true"></i>
                         </Link>
                         <div className="dropdown-menu hover-drop-user" aria-labelledby="navbarDropdown">
-                            <Link to="/register" className="dropdown-item hover-user">Register <i className="fa fa-user-plus food-title-color" aria-hidden="true"></i></Link>
-                            <Link to="/login" className="dropdown-item hover-user">Login <i className="fa fa-user-o food-title-color" aria-hidden="true"></i></Link>
+                            <Link to="/register" className="dropdown-item hover-user">Register <img src="https://img.icons8.com/color/48/000000/add-user-male.png" alt="register-icon"/></Link>
+                            <Link to="/login" className="dropdown-item hover-user">Login <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-3.png" alt="user" /></Link>
                             <div className="dropdown-divider"></div>
-                            <Link to="/" className="dropdown-item hover-user">Log Out <i className="fas fa-user-slash food-title-color"></i></Link>
+                            <Link to="/" className="dropdown-item hover-user">Log Out <img src="https://img.icons8.com/color/48/000000/remove-user-male.png" alt="deny-user" /></Link>
                         </div>
                     </li>
                 </div>
