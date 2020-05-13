@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.0.3",
+    "dotenv": "^8.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-mailchimp-subscribe": "^2.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
