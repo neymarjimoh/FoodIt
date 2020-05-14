@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Carousel from './Carousel';
 import HowToOrder from './HowToOrder';
 import NewsLetter from '../NewsLetter/NewsLetter';
+import Footer from '../Footer/Footer';
 
 
 function Features() {
@@ -106,6 +107,7 @@ class Home extends Component {
             <DisplaySmallMenu />
             <HowToOrder />
             <NewsLetter />
+            <Footer />
         </React.Fragment>
     );
   }

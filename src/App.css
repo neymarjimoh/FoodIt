@@ -213,6 +213,29 @@ ul .nav-link {
   margin-top: 10px;
 }
 
+.footer-main {
+  min-height: 10vh;
+}
+
+.footer-main-div {
+  padding: 15px;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.footer-author {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-icon {
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .dopdown-media {
     display: inline;

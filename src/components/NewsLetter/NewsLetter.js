@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
 // import PropTypes from 'prop-types'
 
 class componentName extends Component {
@@ -59,8 +58,6 @@ class componentName extends Component {
                         <p><img src="https://img.icons8.com/color/24/000000/gmail.png" alt="gmail-icon" /> jemohkunle2007@gmail.com</p>
                     </div>
                 </div>
-                Subscribe
-                <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
             </div>
         )
     }
