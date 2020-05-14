@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import ScrollApp from './components/ScrollWrapper/ScrollWrapper';
 import './App.css';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -29,8 +30,9 @@ const Main = () => (
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Main />
+        <ScrollApp />
+        <NavBar />
+        <Main />
     </div>
   );
 }

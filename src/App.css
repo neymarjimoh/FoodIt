@@ -236,6 +236,21 @@ ul .nav-link {
   text-align: center;
 }
 
+.arrow-up {
+  opacity: 0.3;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.arrow-up:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 @media screen and (min-width: 480px) {
   .dopdown-media {
     display: inline;
