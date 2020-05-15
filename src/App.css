@@ -28,9 +28,36 @@ ul .nav-link {
 }
 
 
-/* .carousel {
-  max-height: 30vh;
-} */
+.contact-container {
+  padding: 60px 50px;
+  height: 100%;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.contact-btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+
+.modal-header, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+.contact-btn:hover {
+  border: 1px solid #f4511e;
+  background-color: #fff !important;
+  color: #f4511e;
+}
 
 .get-started-button:hover {
   background-color: rgb(200, 49, 112);
@@ -80,10 +107,12 @@ ul .nav-link {
 
 .food-card {
   margin: 10px;
+  transition: box-shadow 0.5s;
+  border: 1px solid #f4511e;
 }
 
 .food-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
 .food-card > img:hover {
