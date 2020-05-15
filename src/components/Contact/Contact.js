@@ -92,7 +92,7 @@ class Contact extends Component {
 
             <div className="modal-content">
               <div className="modal-header">
-              <h4>Oops...</h4>
+              <h4>Oops... Site is static</h4>
                 <button type="button" className="close" data-dismiss="modal">&times;</button>
               </div>
               <div className="modal-body">
