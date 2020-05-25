@@ -30,7 +30,9 @@ class About extends Component {
               <p><span style={stepHeader}>Step Two</span> - Make your order and payment</p>
               <p><span style={stepHeader}>Step Three</span> - Food is on your way to your door step</p>
               <br />
-              <p>For more information, contact us via the <Link to="/contact">contact page</Link> or send a mail <a href="mailto: jemohkunle2007@gmail.com">here</a>.</p>
+              <p>For more information, contact us via the <Link to="/contact">contact page</Link> 
+                &nbsp;or send a mail <a href="mailto: jemohkunle2007@gmail.com" target="_blank" rel="noopener noreferrer">here</a>.
+              </p>
               {/* <br /> */}
             </div>
           </div>
