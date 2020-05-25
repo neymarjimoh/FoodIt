@@ -26,9 +26,9 @@ class About extends Component {
                 contribute to your everyday life, so we bring your favorite dishes and food to you. 
               </p>
               <p>Get food on the go with 3 Easy Steps:</p>
-              <p><span style={stepHeader}>Step One</span>- Input your location</p>
-              <p><span style={stepHeader}>Step Two</span>- Make your order and payment</p>
-              <p><span style={stepHeader}>Step Three</span>- Food is on your way to your door step</p>
+              <p><span style={stepHeader}>Step One</span> - Input your location</p>
+              <p><span style={stepHeader}>Step Two</span> - Make your order and payment</p>
+              <p><span style={stepHeader}>Step Three</span> - Food is on your way to your door step</p>
               <br />
               <p>For more information, contact us via the <Link to="/contact">contact page</Link> or send a mail <a href="mailto: jemohkunle2007@gmail.com">here</a>.</p>
               {/* <br /> */}
